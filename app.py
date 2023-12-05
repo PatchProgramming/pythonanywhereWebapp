@@ -8,4 +8,3 @@ def helloworld():
 @app.route("/test")
 def helloworld():
     return "<p>Testing new route</p>"
-print(helloworld)
