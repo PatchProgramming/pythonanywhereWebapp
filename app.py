@@ -7,5 +7,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello from Flask!'
+    return '<h1>Hello from Flask!</h1>'
 
+@app.route('/test')
+def secondFunc():
+    return("<h1> testing new endpoint!</h1>")
