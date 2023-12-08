@@ -1,10 +1,11 @@
-from flash import flask
 
-app = flask(__name__)
+# A very simple Flask Hello World app for you to get started with...
 
-@app.route("/")
-def helloworld():
-    return "<p>Hello World</p>"
-@app.route("/test")
-def helloworld():
-    return "<p>Testing new route</p>"
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello from Flask!'
+
